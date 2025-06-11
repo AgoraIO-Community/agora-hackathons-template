@@ -213,6 +213,18 @@ function cleanup() {
       }
     });
 
+    // Delete .gitignore file
+    if (fs.existsSync('.gitignore')) {
+      fs.unlinkSync('.gitignore');
+      if (debug) console.log('Deleted: .gitignore');
+    }
+
+    // Delete .github folder
+    if (fs.existsSync('.github')) {
+      fs.rmSync('.github', { recursive: true, force: true });
+      if (debug) console.log('Deleted: .github');
+    }
+
     // Delete this script itself (last action)
     if (fs.existsSync(__filename)) {
       fs.unlinkSync(__filename);
