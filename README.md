@@ -4,7 +4,8 @@ This repository serves as a template for creating new Agora hackathon repositori
 
 ## Quick Start
 
-1. **Create a new repository** using this template (click the "Use this template" button on GitHub)
+1. **Create a new repository** using this template (click the "Use this template" button on GitHub)  
+   ![How to create a new repository from this template](./.github/images/create_from_template_small.gif)
 2. **Update the configuration** in `hackathon_config.yaml` with your event details
 3. **Run the generator**:
    ```bash
